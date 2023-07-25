@@ -14,11 +14,11 @@ namespace Portafolio.Servicios
             return new List<Proyecto>() {
                 new Proyecto
             {
-                Titulo = "Slot 1",
-                Descripcion = "Descripción slot 1",
-                Link = "https://www.google.com/",
-                LinkRepositorio = "https://google.com",
-                ImagenURL = "/imagenes/amazon.png"
+                Titulo = "Manejo de Presupuestos: Controla tus Finanzas de manera Eficiente",
+                Descripcion = "Esta aplicación web, desarrollada en ASP.NET Core, utiliza tecnologías avanzadas como SQL Server, DAPPER, Auto Mapper y más, para ofrecerte una experiencia completa y segura en la gestión de tus ingresos y gastos diarios. Desde la generación de base de datos con llaves primarias y foráneas, hasta la exportación a Excel, autenticación con Identity y visualización de transacciones en calendario, esta aplicación te permite mantener un balance adecuado entre tus ingresos y gastos de manera efectiva y sencilla en tu vida cotidiana.",
+                Link = "http://perfil1-001-site1.atempurl.com/",
+                LinkRepositorio = "https://github.com/cyberpunkangel/ManejoPresupuesto",
+                ImagenURL = "/imagenes/manejo-presupuesto.png"
             },
             //    new Proyecto
             //{
