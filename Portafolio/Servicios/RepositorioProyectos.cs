@@ -20,13 +20,14 @@ namespace Portafolio.Servicios
                 LinkRepositorio = "https://github.com/cyberpunkangel/ManejoPresupuesto",
                 ImagenURL = "/imagenes/manejo-presupuesto.png"
             },
-            //    new Proyecto
-            //{
-            //    Titulo = "Ejemplo1",
-            //    Descripcion = "Página de noticias en React",
-            //    Link = "https://nytimes.com",
-            //    ImagenURL = "/imagenes/nyt.png"
-            //},
+                new Proyecto
+            {
+                Titulo = "Taskify: Gestor de Tareas y Pasos Inteligente",
+                Descripcion = "Es una aplicación web que ofrece una completa gestión de tareas y pasos, desarrollada con Entity Framework Core para crear y administrar entidades. La implementación de tablas de Identity simplifica el sistema de usuarios, mientras que la integración de login externo de Microsoft brinda una experiencia de registro y login sin complicaciones. Además, la asignación de roles permite asignar categorías a los usuarios. La aplicación es altamente personalizable con globalización e IStringLocalizer para traducir el contenido a distintos idiomas. El uso de KnockoutJS hace que la aplicación sea interactiva, y se aprovechó al máximo el poder de C# y Entity Framework Core para realizar consultas y operaciones CRUD. También se solucionó el problema de ciclos de objetos con el serializador de JSON de ASP.NET Core. La aplicación permite el almacenamiento local de archivos y su registro en la base de datos, ofreciendo así una solución completa y versátil para la gestión de tareas y pasos.",
+                Link = "https://perfil2-001-site1.dtempurl.com/",
+                LinkRepositorio = "https://github.com/cyberpunkangel/tareas_mvc/tree/main",
+                ImagenURL = "/imagenes/tareas-mvc.png"
+            },
             //    new Proyecto
             //{
             //    Titulo = "Ejemplo2",
