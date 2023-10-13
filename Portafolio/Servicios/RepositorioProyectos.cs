@@ -1,4 +1,5 @@
-﻿using Portafolio.Models;
+﻿using Markdig;
+using Portafolio.Models;
 
 namespace Portafolio.Servicios
 {
@@ -15,7 +16,7 @@ namespace Portafolio.Servicios
                 new Proyecto
             {
                 Titulo = "Sistema de Gestión Cinematográfica con ASP.NET Core y Entity Framework Core",
-                Descripcion = "Este proyecto es una aplicación web API basada en ASP.NET Core y Entity Framework Core, diseñada para gestionar las operaciones clave de un cine. Desde la gestión de actores y géneros hasta detalles específicos de las películas y cines, esta API proporciona una interfaz eficiente para la administración y consulta de información cinematográfica",
+                Descripcion = Markdown.ToHtml("\r\nEste proyecto es una aplicación web API basada en ASP.NET Core y Entity Framework Core, diseñada para gestionar las operaciones clave de un cine. Desde la gestión de actores y géneros hasta detalles específicos de las películas y cines, esta API proporciona una interfaz eficiente para la administración y consulta de información cinematográfica." + Environment.NewLine + Environment.NewLine + "**Tecnologías y Dependencias Utilizadas:**" + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.InMemory: Proveedor de base de datos en memoria para pruebas y desarrollo." + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.Proxies: Habilita la carga perezosa (lazy loading) y la creación de proxies para las entidades." + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.SqlServer: Proveedor de base de datos SQL Server para Entity Framework Core." + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite: Extensión para manejar tipos geoespaciales en SQL Server con Entity Framework Core." + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.Tools: Herramientas de línea de comandos para Entity Framework Core, útiles para migraciones y otros procesos de desarrollo."),
                 Link = "http://cyefc01-001-site1.ftempurl.com/swagger/index.html",
                 LinkRepositorio = "https://github.com/cyberpunkangel/EntityFrameworkCore/tree/main/EFCorePeliculas",
                 ImagenURL = "/imagenes/efc.png"
