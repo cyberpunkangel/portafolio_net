@@ -9,6 +9,9 @@ builder.Services.AddTransient<IServicioEmail, ServicioEmailSmtp>();
 
 var app = builder.Build();
 
+// Set base path for the application
+app.UsePathBase("/portafolio_net");
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

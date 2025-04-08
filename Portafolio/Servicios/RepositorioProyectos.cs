@@ -17,7 +17,7 @@ namespace Portafolio.Servicios
             {
                 Titulo = "Sistema de Gestión Cinematográfica con ASP.NET Core y Entity Framework Core",
                 Descripcion = Markdown.ToHtml("\r\nEste proyecto es una aplicación web API basada en ASP.NET Core y Entity Framework Core, diseñada para gestionar las operaciones clave de un cine. Desde la gestión de actores y géneros hasta detalles específicos de las películas y cines, esta API proporciona una interfaz eficiente para la administración y consulta de información cinematográfica." + Environment.NewLine + Environment.NewLine + "**Tecnologías y Dependencias Utilizadas:**" + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.InMemory: Proveedor de base de datos en memoria para pruebas y desarrollo." + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.Proxies: Habilita la carga perezosa (lazy loading) y la creación de proxies para las entidades." + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.SqlServer: Proveedor de base de datos SQL Server para Entity Framework Core." + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite: Extensión para manejar tipos geoespaciales en SQL Server con Entity Framework Core." + Environment.NewLine + Environment.NewLine + "-Microsoft.EntityFrameworkCore.Tools: Herramientas de línea de comandos para Entity Framework Core, útiles para migraciones y otros procesos de desarrollo."),
-                Link = "http://cyefc01-001-site1.ftempurl.com/swagger/index.html",
+                Link = "http://cyefc05-001-site1.ntempurl.com/swagger/index.html",
                 LinkRepositorio = "https://github.com/cyberpunkangel/EntityFrameworkCore/tree/main/EFCorePeliculas",
                 ImagenURL = "/imagenes/efc.png"
             },
@@ -25,7 +25,7 @@ namespace Portafolio.Servicios
             {
                 Titulo = "Manejo de Presupuestos: Controla tus Finanzas de manera Eficiente",
                 Descripcion = "Esta aplicación web, desarrollada en ASP.NET Core, utiliza tecnologías avanzadas como SQL Server, DAPPER, Auto Mapper y más, para ofrecerte una experiencia completa y segura en la gestión de tus ingresos y gastos diarios. Desde la generación de base de datos con llaves primarias y foráneas, hasta la exportación a Excel, autenticación con Identity y visualización de transacciones en calendario, esta aplicación te permite mantener un balance adecuado entre tus ingresos y gastos de manera efectiva y sencilla en tu vida cotidiana.",
-                Link = "http://mapre01-001-site1.gtempurl.com/",
+                Link = "http://mapre02-001-site1.qtempurl.com/",
                 LinkRepositorio = "https://github.com/cyberpunkangel/ManejoPresupuesto",
                 ImagenURL = "/imagenes/manejo-presupuesto.png"
             },
