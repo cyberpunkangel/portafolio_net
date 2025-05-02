@@ -41,7 +41,7 @@ namespace Portafolio.Servicios
             {
                 Titulo = "BlazorDex",
                 Descripcion = "Es una aplicación web interactiva desarrollada con Blazor que te permite explorar y descubrir información detallada sobre los Pokémon. Utiliza la PokeAPI para obtener datos precisos y actualizados sobre cada Pokémon, y cuenta con una elegante interfaz de usuario con paginación y botones para una experiencia de usuario fluida y agradable.",
-                Link = "http://pokedex01-001-site1.dtempurl.com/",
+                Link = "https://cyberpunkangel.onthewifi.com/blazordex/",
                 LinkRepositorio = "https://github.com/cyberpunkangel/BlazorDex",
                 ImagenURL = "/imagenes/pokedex.png"
             },
