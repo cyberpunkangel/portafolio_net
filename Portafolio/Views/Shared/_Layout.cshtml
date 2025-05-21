@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +30,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Home" asp-action="Contacto">Contacto</a>
                         </li>
+                        <li class="nav-item ms-2">
+                            <button class="btn btn-sm btn-outline-secondary" id="themeToggle">
+                                <i class="bi bi-moon-fill" id="moonIcon"></i>
+                                <i class="bi bi-sun-fill d-none" id="sunIcon"></i>
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -49,6 +55,37 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        // Verificar tema guardado al cargar
+        document.addEventListener('DOMContentLoaded', function() {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-bs-theme', theme);
+            updateIcons(theme);
+        });
+
+        // Manejar el botón de alternar tema
+        document.getElementById('themeToggle').addEventListener('click', function() {
+            const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-bs-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcons(newTheme);
+        });
+
+        function updateIcons(theme) {
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIcon = document.getElementById('sunIcon');
+            
+            if (theme === 'dark') {
+                moonIcon.classList.add('d-none');
+                sunIcon.classList.remove('d-none');
+            } else {
+                moonIcon.classList.remove('d-none');
+                sunIcon.classList.add('d-none');
+            }
+        }
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
