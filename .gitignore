@@ -200,6 +200,17 @@ publish/
 # in these scripts will be unencrypted
 PublishScripts/
 
+# Archivos de despliegue y configuración sensible
+deploy.ps1
+deploy-portafolio.md
+appsettings.*.json
+!appsettings.json
+*.user
+*.pubxml
+*.Publish.xml
+*.Publish.xml.*
+*.publishsettings
+
 # NuGet Packages
 *.nupkg
 # NuGet Symbol Packages
